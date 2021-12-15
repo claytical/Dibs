@@ -20,12 +20,12 @@
       <div class="container">
         <h2>Adding Items to Claim Dibs On...</h2>
     			<div class="columns">
-		    	<?php $dir = new DirectoryIterator(dirname(__FILE__).'../items/'); ?>
+		    	<?php $dir = new DirectoryIterator(dirname(__FILE__).'/../items/'); ?>
 		    	<?php foreach($dir as $fileinfo): ?>
 		    		<?php if(!$fileinfo->isDot()):?>
 		    			<div class="column is-one-fifth">
 
-								<img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/>
+								<img src="../items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/>
 								
 								<?php
 									//ADD ITEMS TO DATABASE
