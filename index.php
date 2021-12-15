@@ -20,16 +20,32 @@
       <div class="container">
         <h2>Call Dibs on Your REF!</h2>
     	<div class="columns">
-		    <?php $dir = new DirectoryIterator(dirname(__FILE__).'/items/'); ?>
-		    <?php foreach($dir as $fileinfo): ?>
-		    	<?php if(!$fileinfo->isDot()):?>
+
+		    <?php 
+
+				$items = $database->select("items", "filename");
+				foreach($items as $item) {
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+		    <?php foreach($items as $items): ?>
 		    		<div class="column is-one-fifth">
 
-						<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getBasename('.png');?>">
-							<img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/>
+						<a class="modal-button" href="#" data-target="#modal-<?php echo substr($item, 0, -4)?>">
+							<img src="items/<?php echo $item;?>" alt="Image" class="image is-128x128"/>
 						</a>
 
-						<div class="modal" id="modal-<?php echo $fileinfo->getBasename('.png');?>">
+						<div class="modal" id="modal-<?php echo $item;?>">
 						  <div class="modal-background"></div>
 						  <div class="modal-content">
 							<div class="box">
@@ -38,7 +54,7 @@
 							      <article class="media">
 							        <div class="media-left">
 							          <figure class="image is-64x64">
-							            <img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image"/>
+							            <img src="items/<?php echo substr($item, 0, -4)?>" alt="Image"/>
 							          </figure>
 							        </div>
 							        <div class="media-content">
@@ -49,7 +65,7 @@
 							            			<input class="input" type="text" placeholder="Your Name" name="name">
 							            		</div>
 							            	</div>
-							            	<input type="hidden" name="filename" value="<?php echo $fileinfo->getFilename();?>">
+							            	<input type="hidden" name="filename" value="<?php echo $item;?>">
 							          	</div>
 							          
 							          <nav class="level-right">
@@ -63,7 +79,6 @@
 						  <button class="modal-close is-large" aria-label="close"></button>
 						</div>
 					</div>
-		    	<?php endif;?>
 		    <?php endforeach;?>
 		</div>
       </div>
