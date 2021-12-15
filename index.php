@@ -21,7 +21,12 @@
         <h2>Call Dibs on Your REF!</h2>
     	<div class="columns">
 
-		    <?php $items = $database->select("items", "filename"); ?>
+		    <?php 
+
+		    $claimed_items = $database->select("claimed_items", "id");
+		    $items = $database->select("items", "filename", [
+		    	"id[!]" => $database->select("claimed_items", "id")]); 
+		    ?>
 		    <?php foreach($items as $item): ?>
 		    		<div class="column is-one-fifth">
 
