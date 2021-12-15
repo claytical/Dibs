@@ -10,7 +10,12 @@
 	if($count == 1) {
 		//VALID FILENAME, GRAB ID
 
-		$database->select("items", ["id"],
+$database->select("account", "user_name", [
+	"user_id" => 200
+]);
+
+
+		$database->select("items", "id",
 					["filename"] => $filename, 
 						function ($row) {
 							$count = $database->count("claimed_items", [

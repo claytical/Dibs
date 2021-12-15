@@ -54,8 +54,6 @@
 							          
 							          <nav class="level-right">
 							              <input type="submit" class="level-item button is-primary" aria-label="claim">
-							              	Dibs!
-							                </a>
 							          </nav>
 							        </div>
 							      </article>
