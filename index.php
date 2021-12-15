@@ -21,11 +21,7 @@
         <h2>Call Dibs on Your REF!</h2>
     	<div class="columns">
 
-		    <?php 
-
-				$items = $database->select("items", "filename");
-				foreach($items as $item) {
-			?>
+		    <?php $items = $database->select("items", "filename"); ?>
 		    <?php foreach($items as $items): ?>
 		    		<div class="column is-one-fifth">
 
@@ -81,6 +77,8 @@ document.querySelectorAll('.modal-button').forEach(function(el) {
         target.classList.remove('is-active');
      });
   });
-});</script>
+});
+
+</script>
 </body>
 </html>
