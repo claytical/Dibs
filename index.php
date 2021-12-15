@@ -25,19 +25,7 @@
 
 				$items = $database->select("items", "filename");
 				foreach($items as $item) {
-				}
-			}
-
-
-
-
-
-
-
-
-
-
-
+			?>
 		    <?php foreach($items as $items): ?>
 		    		<div class="column is-one-fifth">
 
