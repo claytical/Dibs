@@ -28,7 +28,7 @@
 								
 								<?php
 									//CHECK IF ITEM ALREADY IN DATABASe
-									$count = $database->count("items"[
+									$count = $database->count("items",[
 										"name" => $fileInfo->getFilename()]);
 
 
@@ -37,7 +37,7 @@
 										$database->insert("items", [
 											"filename" => $fileinfo->getFilename()
 										]);
-										
+
 									}
 								?>
 							
