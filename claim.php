@@ -10,20 +10,16 @@
 	if($count == 1) {
 		//VALID FILENAME, GRAB ID
 
-$database->select("account", "user_name", [
-	"user_id" => 200
-]);
-
-
-		$database->select("items", "id",
-					["filename"] => $filename, 
-						function ($row) {
+		$rows = $database->select("items", "id", [
+			"filename" => $filename
+		]);
+		foreach($rows as $id) {
 							$count = $database->count("claimed_items", [
-								"item_id"] => $row[id]);
+								"item_id"] => $id);
 							if($count == 0) {
 								//NO ONE HAS CLAIMED IT, CALL DIBS
 								$database->insert("claimed_items", [
-									"item_id" => $row[id],
+									"item_id" => $id,
 									"owner" => $name
 								]);
 								$claimed = true;
@@ -31,7 +27,7 @@ $database->select("account", "user_name", [
 							else {
 								$claimed = false;
 							}
-		});
+		}
 ?>
 <!DOCTYPE html>
 <html>
