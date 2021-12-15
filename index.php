@@ -20,10 +20,11 @@
       <div class="container">
         <h2>Call Dibs on Your REF!</h2>
     	<div class="columns">
-    		<div class="column is-one-fifth">
 		    <?php $dir = new DirectoryIterator(dirname(__FILE__).'/items/'); ?>
 		    <?php foreach($dir as $fileinfo): ?>
 		    	<?php if(!$fileinfo->isDot()):?>
+		    		<div class="column is-one-fifth">
+
 						<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getBasename('.png');?>">
 							<img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/>
 						</a>
@@ -63,10 +64,9 @@
 						  </div>
 						  <button class="modal-close is-large" aria-label="close"></button>
 						</div>
+					</div>
 		    	<?php endif;?>
-
 		    <?php endforeach;?>
-		</div>
 		</div>
       </div>
     </section>
