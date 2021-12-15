@@ -21,12 +21,12 @@
         <h2>Call Dibs on Your REF!</h2>
       </div>
     
-    <?php $dir = new DirectoryIterator(getenv('ITEMS_PATH')); ?>
+    <?php $dir = new DirectoryIterator(dirname(__FILE__).'/items/'); ?>
     <?php foreach($dir as $fileinfo): ?>
     	<?php if(!$fileinfo->isDot()):?>
-				<a class="modal-button" href="#" data-target="#modal-<?php $fileinfo->getFilename();?>"><img src="<?php $fileinfo->getFilename();?>" alt="Image"/></a>
+				<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getFilename();?>"><img src="<?php echo $fileinfo->getFilename();?>" alt="Image"/></a>
 
-				<div class="modal" id="#modal-<?php $fileinfo->getFilename();?>">
+				<div class="modal" id="#modal-<?php echo $fileinfo->getFilename();?>">
 				  <div class="modal-background"></div>
 				  <div class="modal-content">
 					<div class="box">
@@ -35,7 +35,7 @@
 					      <article class="media">
 					        <div class="media-left">
 					          <figure class="image is-64x64">
-					            <img src="<?php $fileinfo->getFilename();?>" alt="Image"/>
+					            <img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image"/>
 					          </figure>
 					        </div>
 					        <div class="media-content">
@@ -46,7 +46,7 @@
 					            			<input type="text" placeholder="Your Name" name="name">
 					            		</div>
 					            	</div>
-					            	<input type="hidden" name="filename" value="<?php $fileinfo->getFilename();?>">
+					            	<input type="hidden" name="filename" value="<?php echo $fileinfo->getFilename();?>">
 					          	</div>
 					          
 					          <nav class="level is-mobile">
@@ -66,17 +66,6 @@
     	<?php endif;?>
 
     <?php endforeach;?>
-    			echo "<img src='".$fileinfo->getFilename()."'/>";
-    			echo "<div class='modal'>";
-    			echo "<div class='modal-background'></div>";
-    			echo "<div class='modal-content'></div>";
-    			echo "<button class='modal-close is-large aria-label='close'></button>";
-    			echo "</div>";
-
-    			}
-		}
-    ?>
-
     </section>
 
 <script>
