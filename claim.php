@@ -14,8 +14,11 @@
 			"filename" => $filename
 		]);
 		foreach($rows as $id) {
+
 							$count = $database->count("claimed_items", [
-								"item_id"] => $id);
+								"item_id" => $id
+							]);
+
 							if($count == 0) {
 								//NO ONE HAS CLAIMED IT, CALL DIBS
 								$database->insert("claimed_items", [
