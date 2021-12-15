@@ -24,9 +24,9 @@
     <?php $dir = new DirectoryIterator(dirname(__FILE__).'/items/'); ?>
     <?php foreach($dir as $fileinfo): ?>
     	<?php if(!$fileinfo->isDot()):?>
-				<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getFilename();?>"><img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image"/></a>
+				<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getFilename();?>"><img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/></a>
 
-				<div class="modal" id="#modal-<?php echo $fileinfo->getFilename();?>">
+				<div class="modal" id="#modal-<?php echo $fileinfo->getBasename('.png');?>">
 				  <div class="modal-background"></div>
 				  <div class="modal-content">
 					<div class="box">
@@ -72,8 +72,8 @@
 document.querySelectorAll('.modal-button').forEach(function(el) {
   el.addEventListener('click', function() {
     var target = document.querySelector(el.getAttribute('data-target'));
-    
-    target.classList.add('is-active');
+    console.log(target);
+//    target.classList.add('is-active');
     
     target.querySelector('.modal-close').addEventListener('click',   function() {
         target.classList.remove('is-active');
