@@ -20,6 +20,20 @@
       <div class="container">
         <h2>Call Dibs on Your REF!</h2>
       </div>
+    
+    <?php
+    	$path = getenv('ITEMS_PATH');
+
+		$dir = new DirectoryIterator($path);
+		foreach ($dir as $fileinfo) {
+    		if (!$fileinfo->isDot()) {
+    			echo "<img src='".$fileinfo->getFilename()."'/>";
+    			}
+		}
+    ?>
+
     </section>
+
+
 </body>
 </html>
