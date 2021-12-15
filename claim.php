@@ -31,6 +31,7 @@
 								$claimed = false;
 							}
 		}
+	}
 ?>
 <!DOCTYPE html>
 <html>
