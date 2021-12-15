@@ -34,11 +34,15 @@
 
 
 									//ADD ITEMS TO DATABASE
-									if($count > 0) {
+									if($count == 0) {
 										$database->insert("items", [
 											"filename" => $fileinfo->getFilename()
 										]);
-
+										echo "<p>New Item Added</p>";
+									}
+									else {
+										echo "<p>Item Already Exists</p>";
+									}
 									}
 								?>
 							
