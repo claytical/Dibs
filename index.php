@@ -23,9 +23,10 @@
 
 		    <?php 
 
-		    $claimed_items = $database->select("claimed_items", "id");
-		    $items = $database->select("items", "filename", [
-		    	"id[!]" => $database->select("claimed_items", "id")]); 
+				$items = $database->select("items", "filename", [
+					"id[!]" => $database->select("claimed_items", "item_id")
+				]);
+
 		    ?>
 		    <?php foreach($items as $item): ?>
 		    		<div class="column is-one-fifth">
