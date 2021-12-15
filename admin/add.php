@@ -27,9 +27,9 @@
 								<img src="../items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/>
 								
 								<?php
-									//CHECK IF ITEM ALREADY IN DATABASe
+									//CHECK IF ITEM ALREADY IN DATABASE
 									$count = $database->count("items",[
-										"filename" => $fileInfo->getFilename()
+										"filename" => $fileinfo->getFilename()
 									]);
 
 
