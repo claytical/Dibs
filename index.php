@@ -33,7 +33,7 @@
 						  <div class="modal-background"></div>
 						  <div class="modal-content">
 							<div class="box">
-							    <form>
+							    <form action="claim.php" method="post">
 
 							      <article class="media">
 							        <div class="media-left">
@@ -53,7 +53,7 @@
 							          	</div>
 							          
 							          <nav class="level-right">
-							              <a class="level-item button is-primary" aria-label="claim">
+							              <input type="submit" class="level-item button is-primary" aria-label="claim">
 							              	Dibs!
 							                </a>
 							          </nav>
