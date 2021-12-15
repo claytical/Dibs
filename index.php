@@ -29,7 +29,7 @@
 							<img src="items/<?php echo $item;?>" alt="Image" class="image is-128x128"/>
 						</a>
 
-						<div class="modal" id="modal-<?php echo $item;?>">
+						<div class="modal" id="modal-<?php echo substr($item, 0, -4)?>">
 						  <div class="modal-background"></div>
 						  <div class="modal-content">
 							<div class="box">
@@ -38,7 +38,7 @@
 							      <article class="media">
 							        <div class="media-left">
 							          <figure class="image is-64x64">
-							            <img src="items/<?php echo substr($item, 0, -4)?>" alt="Image"/>
+							            <img src="items/<?php echo $item ?>" alt="Image"/>
 							          </figure>
 							        </div>
 							        <div class="media-content">
