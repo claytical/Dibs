@@ -22,7 +22,7 @@
     	<div class="columns">
 
 		    <?php $items = $database->select("items", "filename"); ?>
-		    <?php foreach($items as $items): ?>
+		    <?php foreach($items as $item): ?>
 		    		<div class="column is-one-fifth">
 
 						<a class="modal-button" href="#" data-target="#modal-<?php echo substr($item, 0, -4)?>">
