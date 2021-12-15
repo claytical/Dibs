@@ -43,7 +43,7 @@
 									else {
 										echo "<p>Item Already Exists</p>";
 									}
-									}
+									
 								?>
 							
 							</div>
