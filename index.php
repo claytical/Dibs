@@ -24,7 +24,7 @@
     <?php $dir = new DirectoryIterator(dirname(__FILE__).'/items/'); ?>
     <?php foreach($dir as $fileinfo): ?>
     	<?php if(!$fileinfo->isDot()):?>
-				<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getFilename();?>"><img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/></a>
+				<a class="modal-button" href="#" data-target="#modal-<?php echo $fileinfo->getBasename('.png');?>"><img src="items/<?php echo $fileinfo->getFilename();?>" alt="Image" class="image is-128x128"/></a>
 
 				<div class="modal" id="#modal-<?php echo $fileinfo->getBasename('.png');?>">
 				  <div class="modal-background"></div>
