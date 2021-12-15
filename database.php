@@ -1,3 +1,4 @@
+<?php
 require 'Medoo.php';
 
 use Medoo/Medoo;
@@ -16,3 +17,4 @@ $database = new Medoo([
 ]);
 
 
+?>

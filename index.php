@@ -21,19 +21,76 @@
         <h2>Call Dibs on Your REF!</h2>
       </div>
     
-    <?php
-    	$path = getenv('ITEMS_PATH');
+    <?php $dir = new DirectoryIterator(getenv('ITEMS_PATH')); ?>
+    <?php foreach($dir as $fileinfo): ?>
+    	<?php if(!$fileinfo->isDot()):?>
+				<a class="modal-button" href="#" data-target="#modal-<?php $fileinfo->getFilename();?>"><img src="<?php $fileinfo->getFilename();?>" alt="Image"/></a>
 
-		$dir = new DirectoryIterator($path);
-		foreach ($dir as $fileinfo) {
-    		if (!$fileinfo->isDot()) {
+				<div class="modal" id="#modal-<?php $fileinfo->getFilename();?>">
+				  <div class="modal-background"></div>
+				  <div class="modal-content">
+					<div class="box">
+					    <form>
+
+					      <article class="media">
+					        <div class="media-left">
+					          <figure class="image is-64x64">
+					            <img src="<?php $fileinfo->getFilename();?>" alt="Image"/>
+					          </figure>
+					        </div>
+					        <div class="media-content">
+					          	<div class="content">
+					            	<div class="field">
+					            		<label class="label">Name</label>
+					            		<div class="control">
+					            			<input type="text" placeholder="Your Name" name="name">
+					            		</div>
+					            	</div>
+					            	<input type="hidden" name="filename" value="<?php $fileinfo->getFilename();?>">
+					          	</div>
+					          
+					          <nav class="level is-mobile">
+					            <div class="level-right">
+					              <a class="level-item" aria-label="claim">
+					              	Dibs!
+					                </a>
+					            </div>
+					          </nav>
+					        </div>
+					      </article>
+					    </form>
+					</div>
+				  </div>
+				  <button class="modal-close is-large" aria-label="close"></button>
+				</div>
+    	<?php endif;?>
+
+    <?php endforeach;?>
     			echo "<img src='".$fileinfo->getFilename()."'/>";
+    			echo "<div class='modal'>";
+    			echo "<div class='modal-background'></div>";
+    			echo "<div class='modal-content'></div>";
+    			echo "<button class='modal-close is-large aria-label='close'></button>";
+    			echo "</div>";
+
     			}
 		}
     ?>
 
     </section>
 
-
+<script>
+document.querySelectorAll('.modal-button').forEach(function(el) {
+  el.addEventListener('click', function() {
+    var target = document.querySelector(el.getAttribute('data-target'));
+    
+    target.classList.add('is-active');
+    
+    target.querySelector('.modal-close').addEventListener('click',   function() {
+        target.classList.remove('is-active');
+     });
+  });
+})
+;</script>
 </body>
 </html>
