@@ -18,7 +18,7 @@
     </section>
     <section class="section">
       <div class="container">
-    			<div class="columns">
+    			<div class="columns is-multiline">
 		    	<?php $dir = new DirectoryIterator(dirname(__FILE__).'/../items/'); ?>
 		    	<?php foreach($dir as $fileinfo): ?>
 		    		<?php if(!$fileinfo->isDot()):?>

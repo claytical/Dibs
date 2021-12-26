@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <section class="hero is-medium has-background-success">
+    <section class="hero is-medium has-background is-dark">
         <div class="container is-max-desktop has-text-centered">
               <img src="ref_logo.png" width="25%"/>
         </div>
     </section>
     <section class="section">
       <div class="container">
-        <h2>Call Dibs on Your REF!</h2>
-    	<div class="columns">
+        <h2 class="title">Call Dibs on Your REF!</h2>
+    	<div class="columns is-multiline">
 
 		    <?php 
 
