@@ -1,15 +1,14 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Genuine Shock",
+    "glasses": "sunglasses from the future",
     "eye color": "brown",
     "Head Accessory Color": "red",
     "skin color": "peach",
-    "facial hair color": "black",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "hoodie",
     "hair color": "dark brown",
-    "makeup color": "deep red",
     "glass tint": "grey"
   },
   "id": 28

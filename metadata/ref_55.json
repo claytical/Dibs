@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Existential Processing",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "white",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "pencil moustache",
     "head accessory": "baseball cap",
-    "hair color": "brown",
-    "makeup color": "green",
-    "glass tint": "purple"
+    "hair color": "brown"
   },
   "id": 55
 }

@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Curious Suspicion",
+    "glasses": "sunglasses from the future",
     "eye color": "brown",
     "Head Accessory Color": "light grey",
     "skin color": "tacao",
@@ -9,7 +10,6 @@
     "facial hair": "chin strap",
     "head accessory": "hoodie",
     "hair color": "grey",
-    "makeup color": "pink",
     "glass tint": "brown"
   },
   "id": 97

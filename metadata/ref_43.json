@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Hopefully Elated",
+    "glasses": "Velma Dinkley Prescription",
     "eye color": "brown",
     "Head Accessory Color": "grey",
     "skin color": "tacao",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "chin strap",
     "head accessory": "none",
-    "hair color": "pink",
-    "makeup color": "pink",
-    "glass tint": "grey"
+    "hair color": "pink"
   },
   "id": 43
 }

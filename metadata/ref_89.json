@@ -1,16 +1,14 @@
 {
   "traits": {
+    "emotes": "Steely Resolve",
     "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "blue",
     "skin color": "chai",
     "facial hair color": "black",
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "none",
-    "hair color": "green",
-    "makeup color": "purple",
-    "glass tint": "grey"
+    "hair color": "green"
   },
   "id": 89
 }

@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Vengeful Desire",
+    "glasses": "Velma Dinkley Prescription",
     "eye color": "brown",
     "Head Accessory Color": "red",
     "skin color": "peach",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "baseball cap",
-    "hair color": "purple",
-    "makeup color": "pink",
-    "glass tint": "fuscia"
+    "hair color": "purple"
   },
   "id": 75
 }

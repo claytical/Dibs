@@ -1,15 +1,13 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Curious Suspicion",
+    "glasses": "Downeys",
     "eye color": "brown",
-    "Head Accessory Color": "purple",
     "skin color": "tacao",
-    "facial hair color": "black",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
     "hair color": "grey",
-    "makeup color": "deep red",
     "glass tint": "grey"
   },
   "id": 80

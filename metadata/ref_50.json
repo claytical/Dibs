@@ -1,16 +1,14 @@
 {
   "traits": {
+    "emotes": "Righteously Bored",
     "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "blue",
     "skin color": "chai",
     "facial hair color": "black",
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "none",
-    "hair color": "green",
-    "makeup color": "deep red",
-    "glass tint": "yellow"
+    "hair color": "green"
   },
   "id": 50
 }

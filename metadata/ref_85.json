@@ -1,16 +1,14 @@
 {
   "traits": {
+    "emotes": "Playful Excitement",
     "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "violet",
     "skin color": "peach",
     "facial hair color": "dark brown",
     "gender": "male",
     "facial hair": "chin strap",
     "head accessory": "none",
-    "hair color": "black",
-    "makeup color": "pink",
-    "glass tint": "brown"
+    "hair color": "black"
   },
   "id": 85
 }

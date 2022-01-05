@@ -1,16 +1,13 @@
 {
   "traits": {
+    "emotes": "Polite Curiosity",
     "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "yellow",
     "skin color": "peach",
-    "facial hair color": "blonde",
     "gender": "female",
-    "facial hair": "none",
     "head accessory": "none",
     "hair color": "dark brown",
-    "makeup color": "deep red",
-    "glass tint": "grey"
+    "makeup color": "deep red"
   },
   "id": 52
 }

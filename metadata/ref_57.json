@@ -1,16 +1,14 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Dejected Gloom",
+    "glasses": "Morgendorffer Prescription",
     "eye color": "brown",
-    "Head Accessory Color": "cyan",
     "skin color": "tacao",
     "facial hair color": "light grey",
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "none",
-    "hair color": "black",
-    "makeup color": "purple",
-    "glass tint": "brown"
+    "hair color": "black"
   },
   "id": 57
 }

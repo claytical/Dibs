@@ -1,16 +1,13 @@
 {
   "traits": {
+    "emotes": "Righteously Arrogant",
     "glasses": "none",
     "eye color": "blue",
-    "Head Accessory Color": "white",
     "skin color": "tacao",
-    "facial hair color": "auburn",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
-    "hair color": "black",
-    "makeup color": "dusty rose",
-    "glass tint": "orange"
+    "hair color": "black"
   },
   "id": 65
 }

@@ -1,16 +1,13 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Genuine Shock",
+    "glasses": "Morgendorffer Prescription",
     "eye color": "blue",
-    "Head Accessory Color": "yellow",
     "skin color": "tacao",
-    "facial hair color": "dark brown",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
-    "hair color": "dark brown",
-    "makeup color": "green",
-    "glass tint": "yellow"
+    "hair color": "dark brown"
   },
   "id": 61
 }

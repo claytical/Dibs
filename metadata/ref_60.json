@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Pensive Unease",
+    "glasses": "sunglasses from the future",
     "eye color": "brown",
     "Head Accessory Color": "olive",
     "skin color": "peach",
@@ -9,7 +10,6 @@
     "facial hair": "beard",
     "head accessory": "beanie",
     "hair color": "grey",
-    "makeup color": "deep red",
     "glass tint": "grey"
   },
   "id": 60

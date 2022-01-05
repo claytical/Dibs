@@ -1,15 +1,13 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Properly Elevated",
+    "glasses": "Downeys",
     "eye color": "brown",
-    "Head Accessory Color": "blue",
     "skin color": "peach",
-    "facial hair color": "dark brown",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
     "hair color": "black",
-    "makeup color": "deep red",
     "glass tint": "fuscia"
   },
   "id": 42

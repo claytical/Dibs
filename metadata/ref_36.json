@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Wired Excitement",
+    "glasses": "Downeys",
     "eye color": "brown",
     "Head Accessory Color": "olive",
     "skin color": "tacao",
@@ -9,7 +10,6 @@
     "facial hair": "stubble",
     "head accessory": "beanie",
     "hair color": "black",
-    "makeup color": "deep red",
     "glass tint": "grey"
   },
   "id": 36

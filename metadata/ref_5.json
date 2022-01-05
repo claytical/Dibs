@@ -1,16 +1,13 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Vengeful Desire",
+    "glasses": "Velma Dinkley Prescription",
     "eye color": "brown",
-    "Head Accessory Color": "red",
     "skin color": "tacao",
-    "facial hair color": "black",
     "gender": "female",
-    "facial hair": "none",
     "head accessory": "none",
     "hair color": "black",
-    "makeup color": "dusty rose",
-    "glass tint": "grey"
+    "makeup color": "dusty rose"
   },
   "id": 5
 }

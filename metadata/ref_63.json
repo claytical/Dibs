@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes":"Detached Disappointment",
     "glasses": "none",
     "eye color": "hazel",
     "Head Accessory Color": "orange",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "hoodie",
-    "hair color": "brown",
-    "makeup color": "brown",
-    "glass tint": "grey"
+    "hair color": "brown"
   },
   "id": 63
 }

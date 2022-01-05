@@ -1,15 +1,14 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Stoic Misery",
+    "glasses": "Downeys",
     "eye color": "brown",
-    "Head Accessory Color": "violet",
     "skin color": "tacao",
     "facial hair color": "black",
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "none",
     "hair color": "black",
-    "makeup color": "deep red",
     "glass tint": "brown"
   },
   "id": 13

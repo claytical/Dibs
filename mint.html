@@ -18,29 +18,24 @@ const mint = async () => {
 
   // 4. Create and save a token on rarepress
     $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
-/*      var items = [];
-      $.each( data, function( key, val ) {
-  
-        items.push( "<li id='" + key + "'>" + val + "</li>" );
+      var attrs = [];
+
+      Object.keys(data.traits).forEach(function(key) { 
+        attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
       });
-     
-      $( "<ul/>", {
-        "class": "my-new-list",
-        html: items.join( "" )
-      }).appendTo( "body" );
-*/
-      console.log(data);
-    });    
+      console.log(attrs);
+/*
+      let token = await rarepress.token.create({
+        metadata: {
+          name: "REF #" + (i+1),
+          description: "Rich Entitled Fucks Collectible"
+          image: "/ipfs/" + cid,
+          attributes: attrs 
+        },
+      });
+      */
 
 /*
-  let token = await rarepress.token.create({
-    type: "ERC721",
-    metadata: {
-      name: "Hello World NFT",
-      description: "Minting NFT so easy!",
-      image: "/ipfs/" + cid
-    }
-  })
 
   // 5. Publish the image on public IPFS
   await rarepress.fs.push(cid)
@@ -49,6 +44,12 @@ const mint = async () => {
 
   // 7. Publish the token to the marketplace
   let receipt = await rarepress.token.send(token)
+
+
+
+
+    });    
+
 
   document.querySelector("#token").innerHTML = "token object\n\n" + JSON.stringify(token, null, 2)
   document.querySelector("#receipt").innerHTML = "token publish receipt\n\n" + JSON.stringify(receipt, null, 2) 

@@ -1,16 +1,14 @@
 {
   "traits": {
+    "emotes": "Suppressed Shock",
     "glasses": "monocle",
     "eye color": "blue",
-    "Head Accessory Color": "red",
     "skin color": "chai",
     "facial hair color": "grey",
     "gender": "male",
     "facial hair": "chin strap",
     "head accessory": "none",
-    "hair color": "green",
-    "makeup color": "bright red",
-    "glass tint": "grey"
+    "hair color": "green"
   },
   "id": 39
 }

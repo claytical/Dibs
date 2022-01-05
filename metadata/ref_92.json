@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Steely Resolve",
+    "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "white",
     "skin color": "tacao",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "hoodie",
-    "hair color": "grey",
-    "makeup color": "purple",
-    "glass tint": "grey"
+    "hair color": "grey"
   },
   "id": 92
 }

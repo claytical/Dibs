@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Righteously Arrogant",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "yellow",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "pencil moustache",
     "head accessory": "beanie",
-    "hair color": "brown",
-    "makeup color": "pink",
-    "glass tint": "brown"
+    "hair color": "brown"
   },
   "id": 23
 }

@@ -1,16 +1,13 @@
 {
   "traits": {
+    "emotes": "Playful Excitement",
     "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "blue",
     "skin color": "caramel",
-    "facial hair color": "grey",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
-    "hair color": "light grey",
-    "makeup color": "pink",
-    "glass tint": "grey"
+    "hair color": "light grey"
   },
   "id": 31
 }

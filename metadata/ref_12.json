@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Amused Complacency",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "olive",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "baseball cap",
-    "hair color": "dark brown",
-    "makeup color": "bright red",
-    "glass tint": "grey"
+    "hair color": "dark brown"
   },
   "id": 12
 }

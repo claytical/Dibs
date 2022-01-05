@@ -1,16 +1,15 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Judgemental Revulsion",
+    "glasses": "Morgendorffer Prescription",
     "eye color": "blue",
     "Head Accessory Color": "yellow",
     "skin color": "peach",
-    "facial hair color": "black",
     "gender": "non-binary",
     "facial hair": "none",
     "head accessory": "beanie",
     "hair color": "pink",
-    "makeup color": "bright red",
-    "glass tint": "brown"
+    "makeup color": "bright red"
   },
   "id": 7
 }

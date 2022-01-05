@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Pensive Desire",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "violet",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "baseball cap",
-    "hair color": "light grey",
-    "makeup color": "purple",
-    "glass tint": "fuscia"
+    "hair color": "light grey"
   },
   "id": 74
 }

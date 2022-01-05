@@ -1,16 +1,14 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Pensive Unease",
+    "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "violet",
     "skin color": "tacao",
     "facial hair color": "dark brown",
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "none",
-    "hair color": "purple",
-    "makeup color": "deep red",
-    "glass tint": "brown"
+    "hair color": "purple"
   },
   "id": 59
 }

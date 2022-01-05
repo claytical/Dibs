@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Curious Suspicion",
+    "glasses": "Velma Dinkley Prescription",
     "eye color": "hazel",
     "Head Accessory Color": "white",
     "skin color": "tacao",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "beanie",
-    "hair color": "auburn",
-    "makeup color": "purple",
-    "glass tint": "grey"
+    "hair color": "auburn"
   },
   "id": 29
 }

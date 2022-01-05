@@ -1,16 +1,15 @@
 {
   "traits": {
+    "emotes": "Curious Suspicion",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "blue",
     "skin color": "chocolate",
-    "facial hair color": "grey",
     "gender": "non-binary",
     "facial hair": "none",
     "head accessory": "beanie",
     "hair color": "green",
-    "makeup color": "deep red",
-    "glass tint": "grey"
+    "makeup color": "deep red"
   },
   "id": 87
 }

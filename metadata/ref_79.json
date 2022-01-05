@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Righteously Disappointed",
+    "glasses": "sunglasses from the future",
     "eye color": "blue",
     "Head Accessory Color": "orange",
     "skin color": "tacao",
@@ -9,7 +10,6 @@
     "facial hair": "pencil moustache",
     "head accessory": "hoodie",
     "hair color": "dark brown",
-    "makeup color": "deep red",
     "glass tint": "brown"
   },
   "id": 79

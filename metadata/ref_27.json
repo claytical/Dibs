@@ -1,16 +1,14 @@
 {
   "traits": {
+    "emotes": "Satisfied Deviancy",
     "glasses": "prescription",
     "eye color": "brown",
-    "Head Accessory Color": "blue",
     "skin color": "peach",
     "facial hair color": "light grey",
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "none",
-    "hair color": "light grey",
-    "makeup color": "green",
-    "glass tint": "grey"
+    "hair color": "light grey"
   },
   "id": 27
 }

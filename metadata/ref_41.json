@@ -1,16 +1,14 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Righteously Arrogant",
+    "glasses": "Morgendorffer Prescription",
     "eye color": "blue",
-    "Head Accessory Color": "purple",
     "skin color": "tacao",
     "facial hair color": "grey",
     "gender": "male",
     "facial hair": "stubble",
     "head accessory": "none",
-    "hair color": "green",
-    "makeup color": "pink",
-    "glass tint": "brown"
+    "hair color": "green"
   },
   "id": 41
 }

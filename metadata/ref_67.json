@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Feigned Surprise",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "orange",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "chin strap",
     "head accessory": "beanie",
-    "hair color": "grey",
-    "makeup color": "green",
-    "glass tint": "brown"
+    "hair color": "grey"
   },
   "id": 67
 }

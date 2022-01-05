@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Steely Resolve",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "grey",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "sideburns",
     "head accessory": "baseball cap",
-    "hair color": "grey",
-    "makeup color": "purple",
-    "glass tint": "fuscia"
+    "hair color": "grey"
   },
   "id": 15
 }

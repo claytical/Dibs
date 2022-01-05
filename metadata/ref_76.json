@@ -1,16 +1,13 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Indulgent Rumination",
+    "glasses": "Velma Dinkley Prescription",
     "eye color": "brown",
-    "Head Accessory Color": "white",
     "skin color": "tacao",
-    "facial hair color": "black",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
-    "hair color": "black",
-    "makeup color": "green",
-    "glass tint": "grey"
+    "hair color": "black"
   },
   "id": 76
 }

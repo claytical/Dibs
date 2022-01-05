@@ -1,16 +1,14 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Righteously Freaked Out",
+    "glasses": "Morgendorffer Prescription",
     "eye color": "brown",
-    "Head Accessory Color": "orange",
     "skin color": "peach",
     "facial hair color": "grey",
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "none",
-    "hair color": "dark brown",
-    "makeup color": "bright red",
-    "glass tint": "grey"
+    "hair color": "dark brown"
   },
   "id": 4
 }

@@ -1,16 +1,13 @@
 {
   "traits": {
+    "emotes":"Genuine Shock",
     "glasses": "none",
     "eye color": "brown",
-    "Head Accessory Color": "grey",
     "skin color": "peach",
-    "facial hair color": "grey",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "none",
-    "hair color": "pink",
-    "makeup color": "deep red",
-    "glass tint": "grey"
+    "hair color": "pink"
   },
   "id": 91
 }

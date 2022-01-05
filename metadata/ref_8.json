@@ -1,15 +1,14 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Detached Disappointment",
+    "glasses": "Downeys",
     "eye color": "blue",
-    "Head Accessory Color": "yellow",
     "skin color": "peach",
     "facial hair color": "dark brown",
     "gender": "male",
     "facial hair": "chin strap",
     "head accessory": "none",
     "hair color": "black",
-    "makeup color": "brown",
     "glass tint": "grey"
   },
   "id": 8

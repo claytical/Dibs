@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Incurable Boredom",
+    "glasses": "sunglasses from the future",
     "eye color": "brown",
     "Head Accessory Color": "grey",
     "skin color": "tacao",
@@ -9,7 +10,6 @@
     "facial hair": "chin strap",
     "head accessory": "none",
     "hair color": "dark brown",
-    "makeup color": "pink",
     "glass tint": "brown"
   },
   "id": 16

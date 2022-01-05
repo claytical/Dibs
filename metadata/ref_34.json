@@ -1,6 +1,7 @@
 {
   "traits": {
-    "glasses": "sunglasses",
+    "emotes": "Subtle Curiosity",
+    "glasses": "Downeys",
     "eye color": "brown",
     "Head Accessory Color": "pale green",
     "skin color": "peach",
@@ -9,7 +10,6 @@
     "facial hair": "pencil moustache",
     "head accessory": "baseball cap",
     "hair color": "purple",
-    "makeup color": "green",
     "glass tint": "brown"
   },
   "id": 34

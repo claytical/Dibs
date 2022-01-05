@@ -1,16 +1,14 @@
 {
   "traits": {
-    "glasses": "prescription",
+    "emotes": "Legitimate Apprehension",    
+    "glasses": "Morgendorffer Prescription",
     "eye color": "brown",
     "Head Accessory Color": "violet",
     "skin color": "peach",
-    "facial hair color": "red",
     "gender": "male",
     "facial hair": "none",
     "head accessory": "beanie",
-    "hair color": "brown",
-    "makeup color": "bright red",
-    "glass tint": "purple"
+    "hair color": "brown"
   },
   "id": 10
 }

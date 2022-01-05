@@ -1,5 +1,6 @@
 {
   "traits": {
+    "emotes": "Mortified Woe",
     "glasses": "none",
     "eye color": "brown",
     "Head Accessory Color": "purple",
@@ -8,9 +9,7 @@
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "hoodie",
-    "hair color": "light grey",
-    "makeup color": "pink",
-    "glass tint": "grey"
+    "hair color": "light grey"
   },
   "id": 22
 }

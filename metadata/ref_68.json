@@ -1,16 +1,14 @@
 {
   "traits": {
+    "emotes": "Suppressed Shock",
     "glasses": "none",
     "eye color": "blue",
-    "Head Accessory Color": "olive",
     "skin color": "tacao",
     "facial hair color": "grey",
     "gender": "male",
     "facial hair": "beard",
     "head accessory": "none",
-    "hair color": "purple",
-    "makeup color": "deep red",
-    "glass tint": "grey"
+    "hair color": "purple"
   },
   "id": 68
 }
