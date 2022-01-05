@@ -18,8 +18,9 @@ var metadata = [];
         attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
       });
       metadata.push(attrs);
-      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="mintWithNumber(' + i + ')">REF #' + (i+1) + '</a></li>');
     });
+      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="mintWithNumber(' + i + ')">REF #' + (i+1) + '</a></li>');
+
   }
 
 async function mintWithNumber(num) {
