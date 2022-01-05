@@ -11,7 +11,9 @@
 <script>
 var metadata = [];
 
-const mint(var num) = async () => {
+
+void mintWithNumber(var num) {
+const mint() = async () => {
 
 
 
@@ -47,7 +49,7 @@ const mint(var num) = async () => {
   }    
 
 
-
+}
 
   for(var i = 0; i < 100; i++) {
 
@@ -57,7 +59,7 @@ const mint(var num) = async () => {
         attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
       });
       metadata.push(attrs);
-      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="mint(' + i + ')">' + metadata[i].description + '</a></li>');
+      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="mintWithNumber(' + i + ')">' + metadata[i].description + '</a></li>');
     });
   }
 
