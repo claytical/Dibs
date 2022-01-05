@@ -10,47 +10,6 @@
 
 <script>
 var metadata = [];
-
-
-void mintWithNumber(num) {
-const mint() = async () => {
-
-
-
-  // 1. Initialize a rarepress object from Rareterm
-  const rarepress = new Rareterm();
-  // 2. Connect to a rinkeby rarenet node
-  await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
-  // 3. Import a web image to rarepress file system
-    let cid = await rarepress.fs.add("items/ref_" + num + ".png");
-
-  // 4. Create and save a token on rarepress
-
-      let token = await rarepress.token.create({
-        metadata: {
-          name: "REF #" + (num+1),
-          description: "Rich Entitled Fucks Collectible",
-          image: "/ipfs/" + cid,
-          attributes: metadata[i] 
-        }
-      });
-
-  // 5. Publish the image on public IPFS
-    await rarepress.fs.push(cid);
-  // 6. Publish the metadata on public IPFS
-    await rarepress.fs.push(token.tokenURI);
-
-  // 7. Publish the token to the marketplace
-    let receipt = await rarepress.token.send(token);
-
-  document.querySelector("#token").innerHTML = "token object\n\n" + JSON.stringify(token, null, 2)
-  document.querySelector("#receipt").innerHTML = "token publish receipt\n\n" + JSON.stringify(receipt, null, 2) 
-    $("#ref" + num).css("text-decoration", "line-through");
-  }    
-
-
-}
-
   for(var i = 0; i < 100; i++) {
 
     $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
@@ -63,6 +22,44 @@ const mint() = async () => {
     });
   }
 
+function mintWithNumber(num) {
+  const mint() = async () => {
+
+
+
+    // 1. Initialize a rarepress object from Rareterm
+    const rarepress = new Rareterm();
+    // 2. Connect to a rinkeby rarenet node
+    await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
+    // 3. Import a web image to rarepress file system
+      let cid = await rarepress.fs.add("items/ref_" + num + ".png");
+
+    // 4. Create and save a token on rarepress
+
+        let token = await rarepress.token.create({
+          metadata: {
+            name: "REF #" + (num+1),
+            description: "Rich Entitled Fucks Collectible",
+            image: "/ipfs/" + cid,
+            attributes: metadata[i] 
+          }
+        });
+
+    // 5. Publish the image on public IPFS
+      await rarepress.fs.push(cid);
+    // 6. Publish the metadata on public IPFS
+      await rarepress.fs.push(token.tokenURI);
+
+    // 7. Publish the token to the marketplace
+      let receipt = await rarepress.token.send(token);
+
+    document.querySelector("#token").innerHTML = "token object\n\n" + JSON.stringify(token, null, 2)
+    document.querySelector("#receipt").innerHTML = "token publish receipt\n\n" + JSON.stringify(receipt, null, 2) 
+      $("#ref" + num).css("text-decoration", "line-through");
+    }    
+
+
+}
 
 
 
