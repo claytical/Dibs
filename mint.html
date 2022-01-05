@@ -10,7 +10,7 @@ const mint = async () => {
   // 1. Initialize a rarepress object from Rareterm
   const rarepress = new Rareterm();
   // 2. Connect to a rinkeby rarenet node
-  await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" })
+  await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
 
   for(var i = 0; i < 100; i++) {
   // 3. Import a web image to rarepress file system
@@ -25,6 +25,7 @@ const mint = async () => {
       });
       console.log(attrs);
 /*
+
       let token = await rarepress.token.create({
         metadata: {
           name: "REF #" + (i+1),
@@ -33,30 +34,24 @@ const mint = async () => {
           attributes: attrs 
         },
       });
-      */
-
-/*
 
   // 5. Publish the image on public IPFS
-  await rarepress.fs.push(cid)
+    await rarepress.fs.push(cid)
   // 6. Publish the metadata on public IPFS
-  await rarepress.fs.push(token.tokenURI)
+    await rarepress.fs.push(token.tokenURI)
 
   // 7. Publish the token to the marketplace
-  let receipt = await rarepress.token.send(token)
-
-
-
+    let receipt = await rarepress.token.send(token)
 
     });    
 
 
   document.querySelector("#token").innerHTML = "token object\n\n" + JSON.stringify(token, null, 2)
   document.querySelector("#receipt").innerHTML = "token publish receipt\n\n" + JSON.stringify(receipt, null, 2) 
-  */ 
-  }
+*/
+  });
 }
-mint()
+mint();
 </script>
 </body>
 </html>
