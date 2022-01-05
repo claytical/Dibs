@@ -35,7 +35,7 @@ const mint = async () => {
   await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
   for(var i = 0; i < 100; i++) {
   // 3. Import a web image to rarepress file system
-    let cid = await rarepress.fs.add("items/ref_" + i + ".png")
+    let cid = await rarepress.fs.add("items/ref_" + i + ".png");
 
   // 4. Create and save a token on rarepress
 
@@ -45,7 +45,7 @@ const mint = async () => {
           description: "Rich Entitled Fucks Collectible"
           image: "/ipfs/" + cid,
           attributes: attrs 
-        },
+        }
       });
 
   // 5. Publish the image on public IPFS
