@@ -23,8 +23,7 @@ const mint = async () => {
       Object.keys(data.traits).forEach(function(key) { 
         attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
       });
-      console.log(attrs);
-/*
+
 
       let token = await rarepress.token.create({
         metadata: {
@@ -45,12 +44,9 @@ const mint = async () => {
 
     });    
 
-
   document.querySelector("#token").innerHTML = "token object\n\n" + JSON.stringify(token, null, 2)
   document.querySelector("#receipt").innerHTML = "token publish receipt\n\n" + JSON.stringify(receipt, null, 2) 
-*/
-  });
-}
+  }
 }
 mint();
 </script>
