@@ -7,8 +7,6 @@
 <script>
 var metadata = [];
 
-
-const mint = async () => {
   for(var i = 0; i < 100; i++) {
 
     $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
@@ -19,7 +17,15 @@ const mint = async () => {
       });
       metadata.push(attrs);
     });
-  }
+    if(i == 99) {
+      console.log("Metadata ready, let's mint!")
+      mint();
+    }
+}
+
+
+
+const mint = async () => {
 
 
 
@@ -27,7 +33,7 @@ const mint = async () => {
   const rarepress = new Rareterm();
   // 2. Connect to a rinkeby rarenet node
   await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
-  for(int i = 0; i < 100; i++) {
+  for(var i = 0; i < 100; i++) {
   // 3. Import a web image to rarepress file system
     let cid = await rarepress.fs.add("items/ref_" + i + ".png")
 
@@ -57,7 +63,6 @@ const mint = async () => {
 
   }
 
-mint();
 </script>
 </body>
 </html>
