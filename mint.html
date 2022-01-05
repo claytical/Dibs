@@ -7,24 +7,6 @@
 <script>
 var metadata = [];
 
-  for(var i = 0; i < 100; i++) {
-
-    $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
-      var attrs = [];
-
-      Object.keys(data.traits).forEach(function(key) { 
-        attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
-      });
-      metadata.push(attrs);
-    });
-    if(i == 99) {
-      console.log("Metadata ready, let's mint!")
-      mint();
-    }
-}
-
-
-
 const mint = async () => {
 
 
@@ -62,6 +44,27 @@ const mint = async () => {
     }    
 
   }
+
+
+
+  for(var i = 0; i < 100; i++) {
+
+    $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
+      var attrs = [];
+
+      Object.keys(data.traits).forEach(function(key) { 
+        attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
+      });
+      metadata.push(attrs);
+    });
+    if(i == 99) {
+      console.log("Metadata ready, let's mint!")
+      mint();
+    }
+}
+
+
+
 
 </script>
 </body>
