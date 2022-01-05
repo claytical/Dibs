@@ -14,7 +14,7 @@ const mint = async () => {
 
   for(var i = 0; i < 100; i++) {
   // 3. Import a web image to rarepress file system
-//  let cid = await rarepress.fs.add("items/ref_" + i + ".png")
+    let cid = await rarepress.fs.add("items/ref_" + i + ".png")
 
   // 4. Create and save a token on rarepress
     $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
