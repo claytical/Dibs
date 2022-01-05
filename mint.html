@@ -19,7 +19,7 @@ var metadata = [];
       });
       metadata.push(attrs);
     });
-      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="mintWithNumber(' + i + ')">REF #' + (i+1) + '</a></li>');
+      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="#" onClick="mintWithNumber("{%i%}")">REF #' + (i+1) + '</a></li>');
 
   }
 
