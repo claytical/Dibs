@@ -1,13 +1,17 @@
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/rareterm@0.0.9"></script>
 <body>
 <pre id='token'></pre>
 <pre id='receipt'></pre>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://unpkg.com/rareterm@0.0.9"></script>
+<ol id="mintable">
+</ol>
+
+
 <script>
 var metadata = [];
 
-const mint = async () => {
+const mint(var num) = async () => {
 
 
 
@@ -15,15 +19,14 @@ const mint = async () => {
   const rarepress = new Rareterm();
   // 2. Connect to a rinkeby rarenet node
   await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
-  for(var i = 0; i < 100; i++) {
   // 3. Import a web image to rarepress file system
-    let cid = await rarepress.fs.add("items/ref_" + i + ".png");
+    let cid = await rarepress.fs.add("items/ref_" + num + ".png");
 
   // 4. Create and save a token on rarepress
 
       let token = await rarepress.token.create({
         metadata: {
-          name: "REF #" + (i+1),
+          name: "REF #" + (num+1),
           description: "Rich Entitled Fucks Collectible",
           image: "/ipfs/" + cid,
           attributes: metadata[i] 
@@ -40,10 +43,9 @@ const mint = async () => {
 
   document.querySelector("#token").innerHTML = "token object\n\n" + JSON.stringify(token, null, 2)
   document.querySelector("#receipt").innerHTML = "token publish receipt\n\n" + JSON.stringify(receipt, null, 2) 
+    $("#ref" + num).css("text-decoration", "line-through");
+  }    
 
-    }    
-
-  }
 
 
 
@@ -51,17 +53,13 @@ const mint = async () => {
 
     $.getJSON( "metadata/ref_" + i + ".json", function( data ) {
       var attrs = [];
-
       Object.keys(data.traits).forEach(function(key) { 
         attrs.push({"trait_type": key.toLowerCase(), "value": data.traits[key].toLowerCase()});
       });
       metadata.push(attrs);
+      $("#mintable").append('<li class="item" id="ref'+i+'"><a href="mint(' + i + ')">' + metadata[i].description + '</a></li>');
     });
-    if(i == 99) {
-      console.log("Metadata ready, let's mint!")
-      mint();
-    }
-}
+  }
 
 
 
