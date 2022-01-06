@@ -27,7 +27,8 @@ async function mintWithNumber(num) {
     // 1. Initialize a rarepress object from Rareterm
     const rarepress = new Rareterm();
     // 2. Connect to a rinkeby rarenet node
-    await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
+//    await rarepress.init({ host: "https://rinkeby.rarenet.app/v1" });
+     await rarepress.init({ network: "mainnet" });
     // 3. Import a web image to rarepress file system
       let cid = await rarepress.fs.add("items/ref_" + num + ".png");
 
